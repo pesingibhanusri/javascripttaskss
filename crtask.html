@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>username:
+</p>
+<button onclick=changename()>changename</button>
+
+
+<br><br>
+
+<table > 
+
+</table>
+
+    <script>
+function changename(){
+    let username=prompt("enter user name")
+    let h=document.getElementsByTagName("p")
+    h[0].innerHTML=`username:<h1>${username}</h1>`
+}
+
+
+let tab=document.getElementsByTagName("table")
+let row=document.createElement("tr")
+tab[0].appendChild(row)
+let th=document.createElement("th")
+th.innerText="S.NO"
+let ths=document.createElement("th")
+ths.innerText="NAME"
+
+row.appendChild(th)
+row.appendChild(ths)
+
+console.log(tab[0])
+
+let tr1=document.createElement("tr")
+tr1.innerHTML="<td>1</td> <td>Pavani</td>"
+tab[0].appendChild(tr1)
+
+let tr2=document.createElement("tr")
+tr2.innerHTML="<td>2</td> <td>Bhanu</td>"
+tab[0].appendChild(tr2)
+
+let tr3=document.createElement("tr")
+tr3.innerHTML="<td>3</td> <td>Anu</td>"
+tab[0].appendChild(tr3)
+
+let tr4=document.createElement("tr")
+tr4.innerHTML="<td>4</td> <td>Sree</td>"
+tab[0].appendChild(tr4)
+
+let tr5=document.createElement("tr")
+tr5.innerHTML="<td>5</td> <td>Manaswi</td>"
+tab[0].appendChild(tr5)
+
+
+
+    </script>
+</body>
+</html>

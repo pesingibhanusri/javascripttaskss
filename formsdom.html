@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registartion form</h1>
+
+    <input type="text" name="username" placeholder="name" ><br><br>
+    <input type="text" name="number" placeholder="ph.no" ><br><br>
+    <input type="text" name="age"  placeholder="ages"><br><br>
+    <input type="text" name="gender" placeholder="gender"><br><br>
+    <input type="text" name="city" placeholder="city"><br><br>
+    <button  >submit</button>
+
+
+
+    <h1>Login form</h1>
+
+    <input type="text" name="usernames" placeholder="username" ><br><br>
+    <input type="password" name="password" placeholder="password" ><br><br>
+    <button id="btn">submit</button>
+    <script>
+
+
+ 
+ 
+    
+let   names=document.getElementsByName("username")[0]
+let  phnos=document.getElementsByName("number")[0]
+let  ages=document.getElementsByName("age")[0]
+let  genders=document.getElementsByName("gender")[0]
+let  citys=document.getElementsByName("city")[0]
+let btn=document.getElementsByTagName("button")[0]
+btn.addEventListener("click",function(){
+let ns1=names.value;
+console.log(ns1);
+
+let ns2=phnos.value;
+ console.log(ns2);
+
+ let ns3=ages.value;
+ console.log(ns3);
+
+ let ns4=genders.value;
+ console.log(ns4);
+
+ let ns5=citys.value;
+ console.log(ns5);
+ 
+
+
+ 
+ let p1=document.createElement("p")
+ document.body.appendChild(p1)
+ p1.innerText=`your name is ${ns1}`
+
+ let p2=document.createElement("p")
+ document.body.appendChild(p2)
+ p2.innerText=`your ph.no is ${ns2}`
+
+
+ let p3=document.createElement("p")
+ document.body.appendChild(p3)
+ p3.innerText=`your age is ${ns3}`
+
+
+ let p4=document.createElement("p")
+ document.body.appendChild(p4)
+ p4.innerText=`your gender is ${ns4}`
+
+
+ let p5=document.createElement("p")
+ document.body.appendChild(p5)
+ p5.innerText=`your city is ${ns5}`
+
+
+
+ 
+ })
+
+let usernames=document.getElementsByName("usernames")[0]
+let passwords=document.getElementsByName("password")[0]
+let bt2=document.getElementById("btn")
+
+bt2.addEventListener("click",function(){
+ let ns6=usernames.value;
+ console.log(ns6)
+
+ let ns7=passwords.value;
+ console.log(ns7)
+
+ 
+ let p6=document.createElement("p")
+ document.body.appendChild(p6)
+ p6.innerText=`your username is ${ns6}`
+
+ 
+ let p7=document.createElement("p")
+ document.body.appendChild(p7)
+ p7.innerText=`your password is ${ns7}`
+
+})
+
+
+
+
+
+ 
+
+ 
+
+    </script>
+</body>
+</html>

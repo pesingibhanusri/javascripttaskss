@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+<body>
+    <h1>PERSONAL DETAILS</h1>
+    <p class="name">Name:P.Bhanusri</p>
+    <p class="name">Age:20</p>
+    <p>Phno:8367404750</p>
+    <p >Gender:Female</p>
+    <p>Languages:Telugu,Hindi,English</p>
+    <p id="city">City:Hyderabad</p>
+
+    <script>
+      var body=document.body;
+      console.log(body)
+
+
+      var city=document.getElementById("city");
+      console.log(city.innerText="westgodavri")
+
+       var languages=document.getElementsByTagName("p");
+       console.log(languages[4].innerHTML="<b>languages:telugu,hindi,english</b>")
+ 
+
+       var Name_1=document.querySelector(".name")
+       console.log(Name_1.innerHTML="<b>Name:P.Bhanusri</b>")
+    
+
+       
+
+       
+    </script>
+</body>
+</html>

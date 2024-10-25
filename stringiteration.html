@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[1,2,3,4,5]
+      let arr2=  arr.map(function(i,e,a){
+            return i*i
+        })
+ console.log(arr2)
+
+
+ let arr4=["sree","pavani","bhanu"]
+ arr5=arr4.map((a,b,c)=>{
+ arr6=arr4[b].toString()
+ return (arr6.toUpperCase())
+
+ })
+  console.log(arr5)
+
+ let a=[{name:"laptop",price:1000},
+ {name:"laptop",price:500},
+ {name:"laptop",price:700}
+ ]
+ let b=a.filter((e,i,a)=>{
+
+    return e["price"]>500
+
+
+ })
+ console.log(b)
+
+ 
+const purchases=[{price:10,quantity:2},
+{price:10,quantity:2},
+{price:10,quantity:2}
+]
+pa=purchases.reduce((p,c,i,a)=>{
+
+    return p+c.price*c.quantity;
+
+},0)
+console.log(pa)
+    </script>
+</body>
+</html>

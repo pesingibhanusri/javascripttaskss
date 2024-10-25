@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button onclick="greet()">greet</button><br><br>
+<div id="g"></div>
+<button ondblclick="age()">age</button><br><br>
+<div id="a"></div>
+<button onmouseout="name()">name</button><br><br>
+<div id="na"></div>
+<button onmousemove="favcolour()">favcolour</button><br><br>
+<div id="co"></div>
+<button onmousedown="favfood()">favfood</button><br><br>
+<div id="f"></div>
+<button onmouseup="favgame()">favgame</button><br><br>
+<div id="fg"></div>
+
+
+<br><br>
+
+<div>
+    
+        <P class="name">sree</P>
+        <P class="name">honey</P>
+        <P class="name">ammu</P>
+ <div>hello this is my webpage</div>
+ <h1>how are you</h1>
+    
+
+    
+</div><br><br>
+
+
+<div class="ig1  " ><img src="./download.jpeg"> </div>
+<button class="ig1" onclick="change1()" >transparancy</button>
+
+
+<button class="ig1" onclick="change2()">transparancy</button>
+
+<button class="ig1" onclick="change3()">transparancy</button>
+
+<button class="ig1" onclick="change4()">transparancy</button>
+
+
+<button class="ig1" onclick="change5()">transparancy</button>
+
+
+<button class="ig1" onclick="change6()">transparancy</button>
+
+
+<button class="ig1" onclick="change7()">transparancy</button>
+
+<button class="ig1" onclick="change8()">transparancy</button>
+
+
+<button class="ig1"onclick="change9()">transparancy</button>
+
+
+<button class="ig1" onclick="change10()">transparancy</button>
+
+
+
+
+
+
+    <script>
+function greet(){
+    let na=document.getElementById("g")
+    na.innerHTML="<h1>goodmorning</h1>"
+}
+function age(){
+    let age=document.getElementById("a")
+    age.innerHTML="20"
+}
+function name(){
+    let sr=document.getElementById("na")
+    sr.innerHTML="<h1>sree</h1>"
+}
+
+function favcolour(){
+    let colour=document.getElementById("co")
+    colour.innerHTML="<h1>pink</h1>"
+}
+function favfood(){
+    let food=document.getElementById("f")
+    food.innerHTML="<h1>biryani</h1>"
+}
+function favgame(){
+    let game=document.getElementById("fg")
+    game.innerHTML="<h1>shuttle</h1>"
+}
+
+
+let ele_s=document.getElementsByClassName("name")
+console.log(ele_s[0])
+ele_s[0].innerHTML="<b style='color:green'>bhanu</b>"
+
+
+let tag=document.getElementsByTagName("h1")
+console.log(tag[0])
+tag[0].innerHTML="<u style='color:deeppink'>happy</u>"
+
+let all=document.querySelectorAll("div")
+console.log(all[7])
+all[7].innerHTML="<h1>hello</h1>"
+
+
+
+
+function change1(){
+let img=document.getElementsByClassName("ig1")
+
+img[0].innerHTML="<img src='download.jpeg' style='opacity:0'>"
+}
+
+function change2(){
+let img=document.getElementsByClassName("ig1")
+
+img[0].innerHTML="<img src='download.jpeg' style='opacity:0.9'>"
+}
+
+
+function change3(){
+let img=document.getElementsByClassName("ig1")
+
+img[0].innerHTML="<img src='download.jpeg' style='opacity:0.1'>"
+}
+
+function change4(){
+let img=document.getElementsByClassName("ig1")
+
+img[0].innerHTML="<img src='download.jpeg' style='opacity:0.2'>"
+}
+
+function change5(){
+let img=document.getElementsByClassName("ig1")
+
+img[0].innerHTML="<img src='download.jpeg' style='opacity:0.3'>"
+}
+
+function change6(){
+let img=document.getElementsByClassName("ig1")
+
+img[0].innerHTML="<img src='download.jpeg' style='opacity:0.4'>"
+}
+
+function change7(){
+let img=document.getElementsByClassName("ig1")
+
+img[0].innerHTML="<img src='download.jpeg' style='opacity:0.5'>"
+}
+
+function change8(){
+let img=document.getElementsByClassName("ig1")
+
+img[0].innerHTML="<img src='download.jpeg' style='opacity:0.6'>"
+}
+
+function change9(){
+let img=document.getElementsByClassName("ig1")
+
+img[0].innerHTML="<img src='download.jpeg' style='opacity:0.7'>"
+}
+
+function cchange10(){
+let img=document.getElementsByClassName("ig1")
+
+img[0].innerHTML="<img src='download.jpeg' style='opacity:0.8'>"
+}
+
+
+
+
+
+    </script>
+</body>
+</html>

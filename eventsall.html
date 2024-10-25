@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body 
+onload="alert('welcome user')"
+onresize="alert('change size')"
+onkeydown="alert('onkeydown')"
+onkeyup="alert('key up')"
+onkeypress="alert('onpress')"
+
+
+>
+    <!-- onsubmit -->
+   <form action="" method="" onsubmit="alert('form has been successfully')">
+    <input type="text" name="" id="">
+    <button type="submit">submit</button>
+   </form> <br>
+<!-- onchange -->
+ <form action="" method="">
+    <input type="text" id="" name="" onchange="alert('you change content')">
+    <button type="submit">submit</button>
+
+ </form><br>
+ <!-- onfocus -->
+ <form action="" method="">
+    <input type="text" id="" name="" onfocus="alert('focus the content')">
+    <button type="submit">submit</button>
+
+ </form><br>
+ <!-- onblur -->
+
+ <form action="" method="">
+    <input type="text" name="" id="" onblur="alert('content is blured')">
+    <button type="submit">submit</button>
+ </form><br>
+<!-- oninput -->
+ <form action="" method="">
+    <input type="text" name="" id="" oninput="alert('content is blured')">
+    <button type="submit">submit</button>
+ </form><br>
+
+<!-- onrest -->
+<form action="" method="get">
+   <div>
+    <input type="text" value="hello" name="" id="name">
+</div>
+    <button type="submit">submit</button>
+    <button type="reset" onclick=handlereset()>reset</button>
+</form>
+
+
+
+    <script>
+       function handlereset(){
+   let ele=document.getElementsByTagName("div")
+   ele[0].innerHTML="<input value='' type='text' id='name'>"
+        }
+
+      //   window events
+      // onload
+      // onunload
+      // onresize
+      // keyboard events
+      // onkeydown
+      // onkeyup
+      // onkeypress
+    </script>
+</body>
+</html>

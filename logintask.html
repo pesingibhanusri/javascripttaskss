@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+let form=document.createElement("form")
+document.body.append(form)
+
+
+
+
+let input1=document.createElement("input")
+input1.setAttribute("type","text")
+input1.setAttribute("name","name")
+input1.setAttribute("id","name")
+input1.setAttribute("placeholder","name")
+form.append(input1)
+
+
+let input2=document.createElement("input")
+input2.setAttribute("type","email")
+input2.setAttribute("name","email")
+input2.setAttribute("id","email")
+input2.setAttribute("placeholder","exam@gmail.com")
+
+
+input2.innerText="let input2="
+             
+
+form.append(input2)
+
+
+let input3=document.createElement("input")
+input3.setAttribute("type","text")
+input3.setAttribute("name","age")
+input3.setAttribute("id","age")
+input3.setAttribute("placeholder","age")
+form.append(input3)
+
+let input4=document.createElement("input")
+input4.setAttribute("type","text")
+input4.setAttribute("name","city")
+input4.setAttribute("id","city")
+input4.setAttribute("placeholder","city")
+form.append(input4)
+
+
+
+
+let input5=document.createElement("input")
+input5.setAttribute("type","text")
+input5.setAttribute("name","gender")
+input5.setAttribute("id","gender")
+input5.setAttribute("placeholder","gender")
+form.append(input5)
+
+let btn=document.createElement("button")
+btn.setAttribute("type","submit")
+btn.innerText="submit"
+form.append(btn)
+
+
+let obj={}
+form.addEventListener("submit",(e)=>{
+e.preventDefault()
+
+    let name=document.getElementsByName("name")[0]
+    let email=document.getElementsByName("email")[0]
+    let age=document.getElementsByName("age")[0]
+    let city=document.getElementsByName("city")[0]
+    let gender=document.getElementsByName("gender")[0]
+
+     obj.name=name.value
+    //  console.log(obj.name)
+
+     
+     obj.email=email.value
+    //  console.log(obj.email)
+
+     
+     obj.age=age.value
+    //  console.log(obj.age)
+
+     
+     obj.city=city.value
+    //  console.log(obj.city)
+
+     
+     obj.gender=gender.value
+    //  console.log(obj.gender)
+
+
+    // console.log(name.value)
+    
+    // console.log(email.value)
+    
+    // console.log(age.value)
+    
+    // console.log(city.value)
+    
+    // console.log(gender.value)
+
+    console.log(obj)
+})
+
+
+
+</script>
+</html>
