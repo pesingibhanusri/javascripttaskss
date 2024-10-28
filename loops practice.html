@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // nested for loop
+        for(let i=0;i<=2;i++){
+            console.log(`outer loop is ${i}`);
+            for (let j=0;j<=3;j++){
+                console.log(`inner loop is ${j}`)
+            }
+        }
+
+
+        for(let i=1; i<=5; i++){
+            for (let j=1;j<=10;j++){
+            console.log(i,"x" ,j ,"=", i*j)
+            }
+        }
+
+
+        // while
+        let count=0
+        while(count<=2){
+            console.log(`count is${count}`)
+            count++
+        }
+
+ 
+
+let i=0
+while(i<=100){
+    console.log(i)
+    i++
+}
+
+
+// dowhile
+
+let counts=1
+do{
+    console.log(`count is ${counts}`)
+    counts++
+
+}while(counts<=3)
+
+// nested while
+let a=1
+while(a<=3){
+    console.log(`outer loop is ${a}`)
+    let b=1
+    while(b<=2){
+        console.log(`inner loop is${b}`)
+b++
+    }
+    a++
+}
+
+// nested do while
+let x = 1;
+do {
+    console.log(`Outer loop iteration ${x}`);
+    let z = 1;
+    do {
+        console.log(`  Inner loop iteration ${z}`);
+        z++;
+    } while (z <= 2);
+    x++;
+} while (x <= 3);
+
+
+    </script>
+</body>
+</html>
