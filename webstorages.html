@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login form</h1>
+
+   
+
+
+
+    <input type="text" name="usernames" placeholder="username"  ><br><br>
+    <input type="password" name="password" placeholder="password"  ><br><br>
+    <input type="email" name="email" placeholder="example123@gmail.com" ><br><br>
+    <button id="btn">submit</button>
+
+    <script>
+        
+
+
+
+localStorage.setItem("username","bhanu")
+localStorage.setItem("password","123")
+localStorage.setItem("mail","example@gmail.com")
+
+let username=localStorage.getItem("username")
+let password=localStorage.getItem("password")
+let mail=localStorage.getItem("mail")
+
+let usernames=document.getElementsByName("usernames")[0]
+let passwords=document.getElementsByName("password")[0]
+let emails=document.getElementsByName("email")[0]
+let bt=document.getElementById("btn")
+
+
+
+bt.addEventListener("click",function(){
+ 
+    let ns6=usernames.value;
+ console.log(ns6)
+
+ let ns7=passwords.value;
+ console.log(ns7)
+
+ let ns8=emails.value;
+ console.log(ns8)
+
+
+
+// if (username==ns6){
+//     console.log("valid username")
+ 
+//     if(password==ns7){
+//         console.log("valid password")
+//     }
+//     else{
+//         console.log("unvalid password ")
+//     }
+
+//       if(mail==ns8){
+//         console.log("valid email")
+//     }
+//     else{
+//         console.log("unvalid email ")
+//     }
+// }
+// else{
+//  console.log( "invalid user")  
+// }
+ 
+
+if(username==ns6){
+    console.log("valid user")
+}
+else if(password==ns7){
+    console.log("valid password")
+}
+else if(mail==ns8){
+    console.log("valid mail")
+}
+else{
+    console.log("in valid user")
+}
+ 
+ 
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  if(username1.value==username.value){
+//     console.log("valid")
+//  }
+// else{
+//     console.log("invalid user")
+// }
+
+
+
+
+// localStorage.getItem("username")
+// localStorage.getItem("password")
+    </script>
+</body>
+</html>
