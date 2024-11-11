@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="name" type="text"><br><br>
+
+    <input id="about" type="text"><br><br>
+    <button id="sub" type="submit" onclick="submit()">submit</button><hr>
+    <div id="container">
+
+    </div>
+</body>
+<script>
+
+    function submit(){
+let todo_name=document.getElementById("name")
+let todo_details=document.getElementById("about")
+let todo_container=document.getElementById("container")
+let todo_div=document.createElement("div")
+
+todo_div.style.border="2px solid black"
+todo_div.style.padding="10px"
+
+
+if(todo_name.value=="" || todo_details.value==""){
+
+   alert("two values required")
+}
+else{
+    let h1=document.createElement("h1")
+h1.innerText=todo_name.value
+h1.style.color="blue"
+let p=document.createElement("p")
+p.innerText=todo_details.value
+p.style.color="deeppink"
+
+
+
+
+
+todo_div.appendChild(h1)
+todo_div.appendChild(p)
+
+todo_container.appendChild(todo_div)
+
+
+let edit_btn=document.createElement("button")
+edit_btn.innerText="edit"
+edit_btn.style.margin="25px"
+edit_btn.style.backgroundColor="yellow"
+
+
+let delete_btn=document.createElement("button")
+delete_btn.innerText="delete"
+delete_btn.style.margin="25px"
+delete_btn.style.backgroundColor="red"
+
+let complete_btn=document.createElement("button")
+complete_btn.innerText="complete"
+complete_btn.style.margin="25px"
+complete_btn.style.backgroundColor="green"
+
+todo_div.appendChild(edit_btn)
+todo_div.appendChild(delete_btn)
+todo_div.appendChild(complete_btn)
+
+
+
+edit_btn.addEventListener("click",()=>{
+   todo_name.value=h1.innerText
+   todo_details.value=p.innerText
+   todo_container.removeChild(todo_div)
+})
+
+delete_btn.addEventListener("click",()=>{
+    todo_container.removeChild(todo_div)
+    
+})
+
+
+complete_btn.addEventListener("click",()=>{
+
+  todo_div.style.backgroundColor="green"
+  h1.style.textDecoration="line-through"
+  p.style.textDecoration="line-through"
+  todo_div.innerHTML="<h1>completed</h1>"
+
+})
+
+
+todo_name.value=""
+todo_details.value=""
+
+
+
+todo_container.style.display="flex"
+todo_container.style.gap="20px"
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+ 
+</script>
+</html>

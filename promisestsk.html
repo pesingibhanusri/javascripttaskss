@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- promises -->
+     <script>
+        let promise= new Promise((resolve,reject)=>{
+               let num=100
+               if(num<=10){
+                resolve("number is less than or equal to 10")
+               }
+               else{
+                reject("consition false")
+               }
+            })
+
+
+               promise.then(()=>{
+                console.log("promises are fulfilled")
+               }).catch(()=>{
+                console.log("promises are rejected")
+
+               })
+
+
+   let login=new Promise((resolve,reject)=>{
+    let username="sree"
+     password="sri"
+ 
+if(username=="sree" && password=="sri"){
+ resolve("valid user")
+}
+else{
+    reject("invalid user")
+}
+
+})   
+login.then(()=>{
+    console.log("valid user")
+}).catch(()=>{
+    console.log("invalid user")
+})
+
+
+let msg=new Promise((resolve,reject)=>{
+    let greet="goodmorning"
+
+if(greet="goodmorning")
+
+resolve("googmorning")
+ else{
+    reject("not a morning")
+ }
+
+})
+msg.then(()=>{
+    console.log("goodmorning")
+}).catch(()=>{
+    console.log("not a morning")
+})
+           
+
+    
+     </script>
+</body>
+</html>
