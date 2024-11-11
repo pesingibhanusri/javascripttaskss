@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         // class
+//    class flower{
+//     constructor (name,colour){
+//         this.name=name;
+//         this.colour=colour;
+//     }
+//     msg(){
+//         return `flower name is ${this.name} and colour is ${this.colour}`
+//     }
+//    }
+//     let flower1=new flower("rose","pink")
+//     console.log(flower1.msg())
+
+
+//     // super
+//     class movie{
+//         constructor(moviename,heroienename,heroname,){
+//             this.moviename=moviename;
+//             this.heroname=heroname;
+//             this.heroienename=heroienename;
+//         }
+//         details(){
+//          return   `the movie name is${this.moviename} and the hero name is ${this.heroname} and heroiene name is ${this.heroienename}`
+//         }
+//     }
+
+//     let movies=new movie("amaran","shiva kartikeya","saipallavi")
+//       console.log(movies.details())
+
+
+//       class movie1 extends movie{
+//         constructor(moviename,heroname,heroienename){
+//             super(moviename, heroname, heroienename);
+            
+//         }
+//         details(){
+//             return `heroine name is ${this.heroienename} acting in ${this.moviename} movie and hero name is ${this.heroname}`
+//         }
+//       }
+//       let movie2=new movie1("saipallavi","fidaa","varun")
+//       console.log(movie2.details())
+
+
+
+
+
+
+
+
+
+
+
+
+
+//       class animal{
+//         constructor (name){
+//             this.name=name;
+//         }
+//         speak(){
+//  retrurn `${this.name} makes a sound `
+//         }
+
+
+//         }
+//        class dog  extends animal{
+//         constructor(name,breed){
+//             super(name);
+//             this.breed=breed
+//         }
+//         speak(){
+//             return `${this.name}, a${this.breed},barks`
+//         }
+//        } 
+
+
+//        const mydog=new dog("tommy","golden")
+//       console.log(mydog.speak())
+
+
+// Class
+class Flower {
+    constructor(name, colour) {
+        this.name = name;
+        this.colour = colour;
+    }
+    msg() {
+        return `Flower name is ${this.name} and colour is ${this.colour}`;
+    }
+}
+let flower1 = new Flower("rose", "pink");
+console.log(flower1.msg());
+
+
+// Super class
+class Movie {
+    constructor(moviename, heroname, heroienename) {
+        this.moviename = moviename;
+        this.heroname = heroname;
+        this.heroienename = heroienename;
+    }
+    details() {
+        return `The movie name is ${this.moviename}, and the hero name is ${this.heroname}, and the heroine name is ${this.heroienename}.`;
+    }
+}
+
+let movie1 = new Movie("Amaran", "Shiva Karthikeya", "Sai Pallavi");
+console.log(movie1.details());
+
+
+// Subclass
+class Movie1 extends Movie {
+    constructor(moviename, heroname, heroienename) {
+        super(moviename, heroname, heroienename);
+    }
+    details() {
+        return `Heroine name is ${this.heroienename} acting in ${this.moviename} movie and hero name is ${this.heroname}.`;
+    }
+}
+
+let movie2 = new Movie1("Fidaa", "Varun", "Sai Pallavi");
+console.log(movie2.details());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

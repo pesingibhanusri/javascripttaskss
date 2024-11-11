@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+//let
+        let name="sree"
+        name="bhanu"
+        console.log(name)
+
+
+        let username="ammu"
+        username="pavani"
+        console.log(username)
+
+
+        // const
+
+        const string="hello"
+        // string="hai"
+        console.log(string)
+
+
+        const mes="good morning"
+     console.log(mes)
+
+
+    //  arrow function
+
+    const name1=(a)=>{
+//  console.log(a)
+return(a)
+
+    }
+   console.log(name1("sree")) 
+
+
+   const msg=(a,b)=>{
+    console.log(a+b)
+
+   }
+   msg("hai","goodmorning")
+
+// backticks
+let str=`
+h
+e
+l
+l
+o`
+console.log(str)
+
+let name2="sree"
+console.log(`hello${name2}`)
+
+
+// destructuring element
+let arr=[1,2,3,4,5,]
+const[a,b,c,d,e]=arr
+console.log(a,b,c,d,e)
+
+let arr2=["sree","bhanu","jessy"]
+let [a1,b1,c1]=arr2
+console.log(a1,b1,c1)
+
+
+const obj={name:"sri"}
+const {name:n}=obj
+console.log(obj)
+
+
+
+// default parameter
+function sum (a,b=0){
+  console.log(a+b)  
+}
+sum(2)
+ function mul(a,b=2){
+console.log(a*b)
+ }
+ mul(2)
+
+
+// spread operator
+let arr3=[1,2,3,4,5,6,7,8]
+arr4=[...arr3]
+console.log(arr4)
+
+
+let obj2={
+    name:"sree"
+}
+let obj3={
+    age:20
+}
+obj4={...obj2,...obj3}
+console.log(obj4)
+// obj2={...obj3}
+// console.log(obj3)
+
+// rest parameter
+
+function sums(a,b,c,...d){
+console.log(a)
+console.log(b)
+console.log(c)
+console.log(d)
+}
+sums(1,2,3,4,5,5,6,6)
+
+
+obj5={a3:1,b3:2,c3:3}
+const {a3,...rest}=obj5
+obj5={...rest,d:4}
+console.log(obj5)
+
+
+
+</script>
+</body>
+</html>
